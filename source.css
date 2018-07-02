@@ -1,0 +1,335 @@
+:root {
+	--accent-color: #3f51b5;
+	--accent-color-high: #5262bc;
+	--accent-rgb: rgba(39,147,230,0.3);
+	--card-color: #1e2024;
+	--card-games: #2a2c30;
+	--alert-color: #f04747;
+	--alert-color-high: #f25a5a;
+	--main-color: #16171a;
+	--main-alt: #0f1012;
+	--message-color: #292d30;
+	--chat-color: #202225;
+	--popout-color: #202225;
+	--popout-alt: #2c2f33;
+	--server-bg: #232327;
+	--spotify-color: #1db954;
+	--stream-color: #593695;
+	--input-color: #272a2e;
+	--hover-color: rgba(255,255,255,0.05);
+	--border-radius: 4px;
+	--border-radius-big: 8px;
+	--border-radius-bar: 3px;
+}
+
+::selection {
+	background: #859fbf;
+	text-shadow: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+* {
+	font-family: 'PT Sans', sans-serif !important;
+}
+
+
+/*
+ *
+ *	GLOBAL ELEMENTS
+ *
+ */
+
+/* ACCENT [BACKGROUND][IMPORTANT] */
+
+#bd-settings-sidebar .ui-tab-bar-item.selected,
+#friends .tab-bar-item.tab-bar-item-primary.selected .badge,
+#friends .tab-bar-item.tab-bar-item-primary:hover:not(.selected),
+#friends .tab-bar-item.selected .badge,
+.popout header,
+.form-deprecated .btn-primary,
+.form.deprecated .btn-primary,
+.form-deprecated .btn-primary:hover,
+.form.deprecated .btn-primary:hover,
+.private-channel-recipients-invite .footer button,
+.private-channel-recipients-invite .footer button:hover,
+.private-channel-recipients-invite .error-state.not-friends .btn:hover,
+.private-channel-recipients-invite .error-state.not-friends .btn,
+#friends .btn,
+.ui-standard-sidebar-view .bda-slist .bda-right button,
+.itemDefaultSelected-1UAWLe,
+.itemDefaultSelected-1UAWLe:active,
+.ui-tab-bar.SIDE .ui-tab-bar-item.selected,
+.ui-tab-bar.SIDE .ui-tab-bar-item:active,
+.ui-slider .slider-bar-fill,
+.ui-switch-wrapper:not(.disabled):not(.clear):hover .ui-switch-checkbox:checked+.ui-switch,
+.ui-switch-checkbox:checked+.ui-switch,
+._3Mv0RaJ0,
+._3Mv0RaJ0:hover,
+.ui-standard-sidebar-view .bda-slist li button,
+.buttonBrandFilled-3Mv0Ra,
+.buttonBrandFilled-3Mv0Ra:hover,
+.ui-button.brand.filled,
+.ui-button.brand.filled:hover,
+.create-guild-container.deprecated .action:hover.create .btn,
+.region-select:hover button,
+.slider-bar-fill,
+.form .btn-primary:hover,
+.form .btn-primary,
+.side-8zPYf6 .itemSelected-1qLhcL,
+.barFill-23-gu-,
+.buttonBrandInverted-VFL7Yc,
+.colorGreen-29iAKY,
+.cardPrimaryEditable-3KtE4g[style="background-color: rgb(114, 137, 218);"],
+.ui-card-primary.checked,
+.guilds-wrapper .guilds-add-inner,
+.messages-wrapper .messages .divider.divider-red > div,
+.messages-wrapper .messages .divider.divider-red > span,
+.chat .new-messages-bar,
+.popout header,
+.buttonWhiteOutlined-2KwPTg,
+.buttonGreyGhost-SfY7zU,
+.uploadModal-2ifh8j .footer-3mqk7D .button-primary,
+.pill-1nbD-Z,
+.wrapper-O5i5-0 .instantInviteModal-3vhcvC .copy-3nFbq8,
+.side-2nYO0F .itemSelected-3XxAMf[style*="color: rgb(114, 137, 218);"]:hover,
+.ui-standard-sidebar-view #editor-detached button,
+#bd-settingspane-container .bd-pfbtn,
+.buttonPrimaryOutlinedDefault--H0hhk,
+.buttonPrimaryOutlinedSubmitting-3m3eFx,
+.bd-modal-wrapper .footer button,
+.wanderingCubesItem-35kyMu,
+.noticeDefault-362Ko2,
+.notice-3I4-y_,
+.noticeInfo-3_iTE1,
+.btn-3y-iNt,
+.questionMark-CWEQZn,
+.lookInverted-2D7oAl.colorBrand-3pXr91,
+.lookFilled-1Gx00P.colorGreen-29iAKY,
+.lookFilled-luDKDo.colorBrand-3PmwCE,
+.lookFilled-1Gx00P.colorBrand-3pXr91,
+.lookGhost-GyT-k0.colorGrey-4JijJ1,
+.side-2nYO0F .itemSelected-3XxAMf.item-PXvHYJ[style*="color: rgb(114, 137, 218);"]:hover,
+.wrapper-39oAo3 button,
+.container-3nXdBP header,
+.copyInput-2rOSt7 .button-38qaLQ,
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ,
+.lookOutlined-3sRXeN.colorPrimary-3b3xI6,
+.lookOutlined-3sRXeN.colorGreen-29iAKY,
+.lookFilled-1Gx00P.colorPrimary-3b3xI6,
+.headerButtonColor-G7_f-V,
+.chat .has-more button,
+.botTagRegular-2HEhHi,
+.pluginrepo-modal .pluginEntry.downloadable .btn-download,
+.pluginrepo-modal .pluginEntry.updated .btn-download,
+.pluginrepo-modal .pluginEntry.outdated .btn-download,
+.themerepo-modal .themeEntry.downloadable .btn-download,
+.themerepo-modal .themeEntry.updated .btn-download,
+.themerepo-modal .themeEntry.outdated .btn-download,
+.progressBar-3u8FBM.small-1CUeBa[style*="background-color: rgb(114, 137, 218);"],
+.regionSelect-3lf4eE:hover button,
+.actionRed-1J19Tx {
+	background: var(--accent-color) !important;
+}
+
+.lookInverted-2D7oAl.colorBrand-3pXr91:active,
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ:active,
+.lookFilled-1Gx00P.colorGreen-29iAKY:active,
+.lookFilled-luDKDo.colorBrand-3PmwCE:active,
+.lookFilled-1Gx00P.colorBrand-3pXr91:active,
+.lookGhost-GyT-k0.colorGrey-4JijJ1:active,
+.lookGhost-2Fn_0-.colorGrey-2DXtkV:active,
+.lookFilled-1Gx00P.colorPrimary-3b3xI6:active,
+.headerButtonColor-G7_f-V:active {
+	background: var(--accent-color-high) !important;
+}
+
+/* ACCENT [BACKGROUND-COLOR] */
+
+.private-channels .search-bar .search-bar-inner input,
+.guilds-wrapper .guilds .guild.audio .guild-inner:after,
+.guilds-wrapper .guilds .guild.video .guild-inner:after,
+.checkbox .checkbox-inner input[type=checkbox]:checked + span,
+.iconBadge-2dji3k,
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked:before,
+.guildAvatarWithoutIcon-1sTmE_,
+.wrapper-1cBijl button:after,
+.avatar-uploader-inner,
+.selectorButtonSelected-1j4DmC {
+	background-color: var(--accent-color);
+}
+
+/* ACCENT [BACKGROUND-COLOR][IMPORTANT] */
+
+/*.guilds-wrapper .guilds .guild .guild-inner:hover,*/
+.guilds-wrapper .guilds .guild.selected .guild-inner,
+.switch-3wwwcV.valueChecked-m-4IJZ:after,
+.checkbox .checkbox-inner input[type=checkbox]:checked+span,
+.containerDragAfter-3O-noP:before,
+.containerDragBefore-31UGCO:before,
+.containerDragAfter-3rB7mB:after,
+.containerDragBefore-3Dzc5x:before,
+.item-26Dhrx[style="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218); padding: 10px;"],
+.checkbox-1ix_J3[style="background-color: rgb(114, 137, 218); border-color: rgb(114, 137, 218);"],
+.inviteModal-34DdOm .avatar-xxxlarge,
+.iconActiveLarge-2nzn9z {
+	background-color: var(--accent-color) !important;
+}
+
+.containerUserOver-1U5YnL:after {
+	background: var(--accent-rgb) !important;
+}
+
+/* ACCENT RGBA[IMPORTANT] */
+
+.switch-3wwwcV.valueChecked-m-4IJZ,
+.switch-3wwwcV.valueChecked-m-4IJZ[style="flex: 0 0 auto; background-color: rgb(67, 181, 129);"],
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {
+	background-color: var(--accent-rgb) !important;
+}
+
+/* ACCENT HIGHLIGHT BACKGROUND[IMPORTANT] */
+
+/*{
+	background: var(--accent-color-high) !important;
+}*/
+
+/* POPOUT BACKGROUND[IMPORTANT] */
+
+.create-guild-container.deprecated .action,
+.chat,
+.chat>.content,
+.friends-table,
+.search-results-wrap .search-result .hit,
+.search-results-wrap .search-result.expanded .search-result-message.hit,
+.regionSelectModal-12e-57,
+.regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3,
+.theme-dark .modal-3HOjGZ,
+.modal-3HD5ck,
+.footer-2yfCgX,
+.footer-2VgWkh,
+.uploadModal-2ifh8j,
+.uploadModal-2ifh8j .footer-3mqk7D,
+.lfg-3xoFkI,
+.lfg-3xoFkI .scrollerWrap-2uBjct,
+.connectedAccount-3mKaTA,
+.connectedAccount-36nQx7,
+.wrapper-O5i5-0,
+.form-deprecated .form-header,
+.form.deprecated .form-header,
+.form-deprecated .form-inner,
+.form.deprecated .form-inner,
+.form-deprecated .form-actions,
+.form.deprecated .form-actions,
+.wrapper-O5i5-0 .instantInviteModal-3vhcvC .form-actions,
+.inner-tqJwAU,
+.card-11ynQk:before,
+#autocomplete-popout,
+#autocomplete-popout header,
+.gifTag-2VwDRa,
+.group-2dAfBy,
+.inviteModal-34DdOm .scroller,
+.invite-CTGItT,
+.bd-modal-wrapper .header,
+.bd-modal-wrapper .bd-modal-body,
+.bd-modal-wrapper .footer-1PYmcw,
+.modal-3HD5ck .ui-standard-sidebar-view {
+	background: var(--popout-color) !important;
+}
+
+.messages-wrapper {
+	background: var(--chat-color) !important;
+}
+
+/* APP DEFAULT BACKGROUND [IMPORTANT] */
+
+body,
+.app-19_DXt,
+.create-guild-container.deprecated,
+.create-guild-container.deprecated .create-or-join .form-inner,
+.header-1tSljs,
+.headerBar-UHpsPw,
+.title-qAcLxz,
+.channels-Ie2l6A,
+.scrollerWrap-2uBjct,
+.channel-members,
+.search-results-wrap,
+.search-results-wrap .search-header,
+.search-results-wrap .channel-separator .channel-name,
+.modal-3HOjGZ,
+.regionSelectModal-QBpi1R,
+.ui-standard-sidebar-view .content-region,
+
+.container-2Rl01u,
+.title-3qD0b-,
+.container-PNkimc,
+.members-1998pB,
+.body-3ND3kc,
+.root-SR8cQa::-webkit-scrollbar,
+.regionSelect-3lf4eE,
+.carousel-JbsNzL,
+.article-FleDq5 {
+	background: var(--main-color) !important;
+}
+
+.titleBar-AC4pGV,
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller {
+	background: var(--main-alt) !important;
+}
+
+.Select-menu-outer,
+.select-2TCrqx .Select-control,
+.ui-select > .Select .Select-menu-outer,
+.contextMenu-HLZMGh,
+.itemSubMenu-3ZgIw-,
+.item-1Yvehc,
+.item-1Yvehc.itemSubMenu-1vN_Yn,
+.item-1Yvehc.itemSubMenu-1vN_Yn .scroller-fzNley,
+.attachPopout-1n-ZKM,
+.container-2YgzWd,
+.container-1nZlH6,
+.popoutList-T9CKZQ,
+.scroller-3J0bdT,
+.emojiPicker-3g68GS,
+.emojiPicker-3g68GS .header-27dQ-e .search-bar,
+.emojiPicker-3g68GS .scrollerWrap-EC-dSj,
+.emojiPicker-3g68GS .stickyHeader-3LjM5X,
+.emojiPicker-3g68GS .category-3rCtoh,
+.diversitySelector-O3ea2c .popout-2lja3I,
+.emojiPicker-3m1S-j,
+.emojiPicker-3m1S-j .header-1nkwgG .search-bar,
+.emojiPicker-3m1S-j .category-2U57w6,
+.diversitySelector-tmmMv0 .popout-2nUePc,
+.menu-Sp6bN1,
+.small-popout-box,
+.searchPopout-1vUlP3,
+.gameSelector-24sFfz,
+.quickswitcher-3JagVE,
+.themed-popout .header,
+.themed-popout .footer,
+.private-channel-recipients-invite .body,
+#autocomplete-popout .autocomplete-scroller,
+.incomingCallInner-2rV0UJ,
+.bda-dark #bda-qem,
+.bda-dark #bda-qem-favourite-container,
+.bda-dark #bda-qem-twitch-container,
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc,
+.attachPopout-1n-ZKM,
+.overflowRolesPopout-140n9i,
+.overflowRolesPopoutArrow-2O66oH,
+.bf-toolbar:before {
+	background: var(--popout-alt) !important;
+}
+
+.body-3iLsc4,
+.footer-1fjuF6,
+.popout-3sVMXz section,
+.themed-popout,
+.messagesPopoutWrap-1MQ1bW,
+.themed-popout .header {
+	background-color: var(--popout-alt) !important;
+}
+
+/* ACCENT [COLOR] */
+
+.app-19_DXt a…
